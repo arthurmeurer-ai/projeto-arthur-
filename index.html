@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilded & Co. | Mercado de Alto Luxo & Bilionarismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">Gilded <span>& Co.</span></h1>
+            <p class="subtitle">Portal do Mercado de Alto Luxo, Ativos Escassos e Impérios Financeiros</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" id="escassos">
+            <div class="section-header">
+                <h2>👑 Mercado de Alta Escassez</h2>
+                <button id="btn-simular" class="btn btn-primary">Simular Variação de Mercado</button>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card asset-card">
+                    <span class="badge">Metal Precioso</span>
+                    <h3>Ouro Pureza 24k <small>(kg)</small></h3>
+                    <p class="price" id="preco-ouro">R$ 412.500</p>
+                    <span class="trend positive" id="var-ouro">+1.2% hoje</span>
+                </div>
+                
+                <div class="card asset-card">
+                    <span class="badge">Gema Rara</span>
+                    <h3>Diamante Azul <small>(por ct)</small></h3>
+                    <p class="price" id="preco-diamante-azul">US$ 3.900.000</p>
+                    <span class="trend positive" id="var-d-azul">+0.5% hoje</span>
+                </div>
+
+                <div class="card asset-card">
+                    <span class="badge">Metal Precioso</span>
+                    <h3>Prata Fina (.999) <small>(kg)</small></h3>
+                    <p class="price" id="preco-prata">R$ 5.120</p>
+                    <span class="trend negative" id="var-prata">-0.3% hoje</span>
+                </div>
+
+                <div class="card asset-card">
+                    <span class="badge">Gema Rara</span>
+                    <h3>Diamante Rosa Argyle</h3>
+                    <p class="price" id="preco-diamante-rosa">US$ 2.100.000</p>
+                    <span class="trend positive" id="var-d-rosa">+2.1% hoje</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="calculadora">
+            <h2>💎 Calculadora de Rendimento</h2>
+            <div class="card calc-card">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="patrimonio">Patrimônio Investido (US$):</label>
+                        <input type="number" id="patrimonio" value="1000000000" step="10000000">
+                    </div>
+                    <div class="input-group">
+                        <label for="taxa">Retorno Anual Estimado (%):</label>
+                        <input type="number" id="taxa" value="8" step="0.5" min="0" max="100">
+                    </div>
+                </div>
+
+                <div class="calc-results grid grid-3">
+                    <div class="result-box">
+                        <span>Rendimento Diário</span>
+                        <strong id="rendimento-diario">US$ 219.178</strong>
+                    </div>
+                    <div class="result-box">
+                        <span>Rendimento Mensal</span>
+                        <strong id="rendimento-mensal">US$ 6.666.666</strong>
+                    </div>
+                    <div class="result-box highlight">
+                        <span>Rendimento Anual</span>
+                        <strong id="rendimento-anual">US$ 80.000.000</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="composicao">
+            <h2>🏛️ Composição de Riqueza</h2>
+            <p class="section-desc">Como os maiores patrimônios do mundo distribuem seu capital:</p>
+
+            <div class="grid grid-4">
+                <div class="card comp-card">
+                    <div class="icon">🏆</div>
+                    <h3>Ouro e Metais</h3>
+                    <p>Reserva de valor e proteção contra inflação global.</p>
+                </div>
+                <div class="card comp-card">
+                    <div class="icon">💍</div>
+                    <h3>Joias Raras</h3>
+                    <p>Ativos portáteis de altíssima densidade de valor.</p>
+                </div>
+                <div class="card comp-card">
+                    <div class="icon">🏙️</div>
+                    <h3>Real Estate</h3>
+                    <p>Propriedades icônicas em localizações globais prime.</p>
+                </div>
+                <div class="card comp-card">
+                    <div class="icon">📈</div>
+                    <h3>Equity / Private Equity</h3>
+                    <p>Participação relevante em empresas de alto impacto.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gilded & Co. — Simulação de Interface Executiva de Alto Luxo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
